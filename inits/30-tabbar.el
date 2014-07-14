@@ -10,11 +10,11 @@
 ;; グループ化しない
 ;; (setq tabbar-buffer-groups-function nil)
 
-(global-set-key (kbd "<M-right>") 'tabbar-forward-tab)
-(global-set-key (kbd "<M-left>") 'tabbar-backward-tab)
+(global-set-key (kbd "ESC <right>") 'tabbar-forward-tab)
+(global-set-key (kbd "ESC <left>") 'tabbar-backward-tab)
 
-(global-set-key (kbd "<M-up>") 'tabbar-forward-group)
-(global-set-key (kbd "<M-down>") 'tabbar-backward-group)
+(global-set-key (kbd "ESC <up>") 'tabbar-forward-group)
+(global-set-key (kbd "ESC <down>") 'tabbar-backward-group)
 
 ;; 左に表示されるボタンを無効化
 (dolist (btn '(tabbar-buffer-home-button
